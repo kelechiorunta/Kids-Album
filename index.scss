@@ -1,0 +1,207 @@
+*, *::before,*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    border:1px solid;
+}
+
+body{
+    width:100%;
+    height:100%;
+    display: grid;
+    padding:0.5em;
+    grid-template-columns: 20% 20% 60%;
+    grid-column-gap:0em;
+    grid-auto-rows: 100%;
+    overflow:scroll;
+
+}
+
+.container{
+    width:  250px; 
+    height:250px;
+    display: block;
+    margin: auto;
+    overflow: scroll;
+    
+}
+
+div{
+    width:100%;
+    display: block;
+    margin: auto;
+}
+
+.user_image{
+    object-fit: cover;
+    width:100%;
+    height:37vh;
+    display: inline-block;
+    margin: auto;
+    border-radius: 30%;
+    box-shadow: 5px 5px 25px 25px inset rgba(0, 0, 0, 0.5);
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    border-left:5px solid grey;
+    border-right:5px solid grey;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    transition: all 3s ease;
+    &:hover{
+        cursor:pointer;
+        transition: all 3s ease ;
+    }
+}
+
+.user_image_figure_container{
+    // border-left:5px solid grey;
+    // border-right:5px solid grey;
+    // border-bottom: 5px solid transparent;
+    // border-top: 5px solid transparent;
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    //border-radius: 50%;
+    //box-shadow: 5px 5px 25px 25px inset rgba(0, 0, 0, 0.5);
+    //background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    transition: all 5s ease;
+    &:hover{
+        border-top: 0px solid;
+        border-bottom: 0px solid;
+        border-left:0px solid;
+        border-right:0px solid;
+        transition:all 3s ease;
+    }
+}
+
+#listid{
+    p, blockquote{
+        padding:10px 20px;
+         font-size:15px;
+         font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+        }
+        p{  
+            text-align: center;
+            text-transform: uppercase;
+            background-color: hsla(240, 50%, 80%, 0.5);
+            font-weight:700;
+            
+        }
+
+        blockquote{
+            min-height:225px;
+        }
+        width:250px; 
+        height:325px;
+        display: block;
+        margin: auto;
+        overflow:scroll;
+        transition:all 9s ease;
+}
+
+
+
+.selecting{
+    //background: grey;
+    background: hsla(240, 50%, 80%, 0.5);
+}
+
+.highlight{
+background-color: hsla(240, 50%, 80%, 0.5);}
+
+// .vals{
+//     background-color: green;
+// }
+
+#data_cont{
+    overflow: scroll;
+    height:50vh;
+}
+li{
+    z-index:1;
+    list-style-type: none;
+    display: inline-block;
+    width:100%;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    font-weight: 600;
+    //pointer-events: none;
+    //border:none;
+    &:hover{
+        cursor:pointer;
+        
+        
+        //background: hsla(240, 50%, 80%, 0.5);
+    }
+
+
+    p, blockquote{
+        padding: 0 10px;
+        margin: 25% auto;
+        font-size: 25px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+.grid_figure{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-auto-rows: 100%;
+    
+
+}
+
+fieldset{
+    width:100%;
+}
+
+.selected_profile{
+    width:100%;
+    // padding: 20px 0 0 0;
+}
+
+legend, h2, h1{
+    text-align:center;
+    border-radius:10px;
+}
+
+.interior_container{
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    z-index:1;
+    border-left: 29vw solid hsla(240, 50%, 80%, 0.5);
+    border-right: 29vw solid hsla(240, 50%, 80%, 0.5);
+    border-bottom: 150px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px 200px inset rgba(0, 0, 0, 0.5);
+    border-top:20px solid white;
+    margin: 5vh 0 0 0;
+    height:50vh;
+    position:relative;
+    transition: all 3s ease;
+    &:hover{
+        border-left: 0px solid  hsla(360,90%,10%,0);
+        border-right: 0px solid  hsla(360,90%,10%,0);
+        cursor:pointer;
+        transition: all 4s ease;
+}
+}
+
+.hidden_items{
+    position: fixed;
+    z-index:-999;
+    opacity: 0.05;
+    left:40%;
+}
+
+.close_image{
+    border-left: 0px; 
+    border-right:0px; 
+    //background: red;
+    transition: all 5s ease;
+}
